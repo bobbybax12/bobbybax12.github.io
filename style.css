@@ -101,7 +101,7 @@ nav{
     transition:transform 0.5s;
 }
 .icon i{
-    width:28px;
+    width:100px;
 }
 .icon a{
     position:absolute;
@@ -118,6 +118,7 @@ nav{
 }
 .icon a:hover{
     opacity:1;
+    color : rgba(255, 219, 15, 0.911)
 }
 .icon:hover{
     transform:translateY(-5px);
