@@ -160,5 +160,21 @@ nav{
     background-image: url(https://th.bing.com/th/id/R.624fbb40bc196499773b3908b0fad145?rik=vSHkn2%2bPFhp7aA&riu=http%3a%2f%2fnewyorkcen.com%2fwp-content%2fuploads%2f2019%2f06%2fMorningside-Campus-at-Dusk-2-1024x366.jpg&ehk=sFcTbs%2fCk8mLXYn2rHAxC0kVVOcryg5OHODbbgvet0c%3d&risl=&pid=ImgRaw&r=0);
     background-size: cover;
     background-blend-mode: multiply;
-    color: var(clr-light);
+    color:var(clr-light);
+    text-align:center;
+}
+
+.section__title--services{
+    color:var(--clr-accent);
+    position:relative;
+}
+
+.section__title--services::after{
+    content:'';
+    display:block;
+    width:25%;
+    height:1px;
+    margin:0.5em auto 1em;
+    background:var(--clr-light);
+    opacity:0.25;
 }
