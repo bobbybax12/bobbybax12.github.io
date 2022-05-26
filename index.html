@@ -1,127 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Baxter's Portolio Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
-        </button>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-                <li class="nav__item"><a href="#resume" class="nav__link">Resume</a></li>
-                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-            </ul>
-        </nav>
-    </header>
-<!--______________________________________________________________________________________________________________________________________________________________________________________________________-->
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Robert Baxter Jr.</strong>
-        </h1> 
-        <p class="section__subtitle section __subtitle--intro">Aspiring Software Engineer</p>
-        <img src="/img/bobbyimg.JPG" alt="Picture of me smiling" class="intro__img">
-    </section>
-<!--______________________________________________________________________________________________________________________________________________________________________________________________________-->
-    <section class="my-services" id="services">
-    <h2 class="section__title section__title--services">What I do</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Personality Projects</h3>
-                <p>As a developer, you need to ways to showcase your skills to potential employers. There's no better way of doing this than a dedicated portfolio page. It gives you full control of how you'd like to present yourself.</p>
-            </div>
-
-            <div class="service">
-                <h3>Blog</h3>
-                <p>As a developer, you need to ways to showcase your skills to potential employers. There's no better way of doing this than a dedicated portfolio page. It gives you full control of how you'd like to present yourself.</p>
-            </div>
-
-            <div class="service">
-                <h3>Stock and Cryptocurrency Trading</h3>
-                <p>As a developer, you need to ways to showcase your skills to potential employers. There's no better way of doing this than a dedicated portfolio page. It gives you full control of how you'd like to present yourself.</p>
-            </div>
-
-        </div>
-        <a href="#work" class="btn">My Work</a>
-    </section>
-<!--______________________________________________________________________________________________________________________________________________________________________________________________________-->
-    <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about">Student at Columbia University</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
-        <div class="about-me__body">
-            <p>My name is Robert Baxter Jr. and I am from New Jersey. I am currently a junior studying Computer Science-Mathematics
-                at Columbia Universty. I am currently working towards earning a software engineering internship for the summer of 2023. The 
-                ultimate goal is to become a full software engineer after graduating. In my free time I enjoy spending time with my family, watching/playing sports,
-                programming, trading stocks, and 3D printing.
-            </p>
-        </div>
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
 
-        <img src="https://lh3.googleusercontent.com/hPwRk2uGkoYQJRXlIBbUSQQAIJn6Xf5Dskodiu36YvyFpHXy3zvVIuL4e-aq_XEDx3zPKftaEQZ5KTKip7-twfLfCAuWqsCru_RLrFVt8GDYGxxzGR5d-U0LzxoCD2KV93wQd65H6N8=w2400" alt="Pic of me">
-    </section>
-<!--______________________________________________________________________________________________________________________________________________________________________________________________________-->
-    <section class="my-work" id="work">
-        <h2 class="section__title">My Work</h2>
-        <p class="section__subtitle section__subtitle--work">A selection of my projects</p>
-
-        <div class="portfolio">
-            <a href="#" class="portfolio__item">
-                <img src="#" alt="" class="portfolio__img">
-            </a>
-            <a href="#" class="portfolio__item">
-                <img src="#" alt="" class="portfolio__img">
-            </a>
-            <a href="#" class="portfolio__item">
-                <img src="#" alt="" class="portfolio__img">
-            </a>
-            <a href="#" class="portfolio__item">
-                <img src="#" alt="" class="portfolio__img">
-            </a>
-            <a href="#" class="portfolio__item">
-                <img src="#" alt="" class="portfolio__img">
-            </a>
-            <a href="#" class="portfolio__item">
-                <img src="#" alt="" class="portfolio__img">
-            </a>
-        </div>
-    </section>
-<!--______________________________________________________________________________________________________________________________________________________________________________________________________-->
-    <footer>
-        <a href="mailto:rsb2194@columbia.edu" class="footer__link">rsb2194@columbia.edu</a>
-        <ul class="social-list">
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://www.linkedin.com/in/robert-baxter-jr-a65510210/">
-                    <i class="fab fa-linkedin"></i>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Jane Smith</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="img/dev-jane-01.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Design + Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>E-Commerce</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>WordPress</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#work" class="btn">My Work</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Designer & developer based out of NYC</p>
+           
+           <div class="about-me__body">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+           
+           <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
                 </a>
-            </l1>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://twitter.com/BobbyBaxter12">
-                    <i class="fab fa-twitter"></i>
+                
+                <!-- Portfolio item 02 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
                 </a>
-            </l1>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://www.instagram.com/bbaxterjr/">
-                    <i class="fab fa-instagram"></i>
+                
+                <!-- Portfolio item 03 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
                 </a>
-            </l1>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/bobbybax12">
-                    <i class="fab fa-github"></i>
+                
+                <!-- Portfolio item 04 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
                 </a>
-            </l1>
-        </ul>
-    </footer>
-
-    <script src="js/index.js"></script>
-
-</body>
+                
+                <!-- Portfolio item 05 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 07 -->
+                <a href="portfolio-item.html" class="portfolio__item">
+                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 08 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 09 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 0 0-->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
 </html>
-    
