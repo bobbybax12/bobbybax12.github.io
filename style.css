@@ -290,6 +290,8 @@ nav{
     }
 }
 
+/*Services*/
+
 .my-services{
     background-color: var(--clr-dark);
     background-image: url(https://th.bing.com/th/id/R.624fbb40bc196499773b3908b0fad145?rik=vSHkn2%2bPFhp7aA&riu=http%3a%2f%2fnewyorkcen.com%2fwp-content%2fuploads%2f2019%2f06%2fMorningside-Campus-at-Dusk-2-1024x366.jpg&ehk=sFcTbs%2fCk8mLXYn2rHAxC0kVVOcryg5OHODbbgvet0c%3d&risl=&pid=ImgRaw&r=0);
@@ -334,4 +336,45 @@ nav{
         margin-left:2em;
     }
 }
-/*1:02*/
+
+.about-me {
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.about-me__img {
+    box-shadow:var(--bs);
+}
+
+@media (min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-areas: 
+            "title img"
+            "subtitle img"
+            "text img";
+        grid-column-gap: 2em;
+    }
+    
+    .section__title--about {
+        grid-area: title;
+    }
+    
+    .section__subtitle--about {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        position: relative;
+        left: -1em;
+        width: calc(100% + 2em);
+        padding-left: 1em;
+        padding-right: calc(200px + 4em);
+    }
+    
+    .about-me__img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
+
