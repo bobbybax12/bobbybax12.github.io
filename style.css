@@ -20,13 +20,14 @@
     --fs-h3:1.25rem;
     --fs-body:1rem;
 
-    --bs:0.25em 0.25em 0.75em rgba(0,0,0,0.25) ;
+    --bs:0.25em 0.25em 0.75em rgba(0,0,0,0.25),
+         0.125em 0.125em 0.25em rgba(0,0,0,0.15);
 
 }
 
 @media (mid-width: 800px){
     :root{
-        --fs-h1:4.5;
+        --fs-h1:4.5rem;
         --fs-h2:3.75rem;
         --fs-h3:1.5rem;
         --fs-body:1.125rem;
@@ -120,6 +121,10 @@ nav{
     box-shadow:var(--bs);
 }
 
+.section__subtitle--intro{
+    display: inline-block;
+}
+
 @media (min-width:600px){
     .intro{
         display:grid;
@@ -148,4 +153,11 @@ nav{
         left:-1.5em;
         width:calc(100% + 1.5em);
     }
+}
+
+.my-services{
+    background-color: var(--clr-dark);
+    background-image: url(img/bobbyimg.JPG);
+    background-size: cover;
+    color: var(clr-light);
 }
