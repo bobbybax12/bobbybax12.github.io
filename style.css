@@ -146,7 +146,7 @@ header {
     padding: 1em;
 }
 
-nav{
+.nav{
     position: fixed;
     background: var(--clr-dark);
     color: var(--clr-light);
@@ -241,10 +241,6 @@ nav{
 .hamburger::after { bottom: 6px; }
 
 
-.logo {
-    max-width: 100px;
-}
-
 /*Intro Section*/
 
 
@@ -264,7 +260,7 @@ nav{
     .intro{
         display:grid;
         width:min-content;
-        margin:@ auto;
+        margin:0 auto;
         grid-column-gap:1em;
         grid-template-areas: 
             "img title"
